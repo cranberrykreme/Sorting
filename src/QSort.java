@@ -1,5 +1,10 @@
 import java.util.ArrayList;
 
+/**
+ * sorts a list using QuickSort
+ * much faster than bubble sort
+ * sorts in O(nlogn) time
+ */
 public class QSort{
 
     ArrayList<Integer> list = new ArrayList<Integer>();
@@ -10,7 +15,9 @@ public class QSort{
         System.out.println("sorted list Qsort: " + list);
     }
 
-
+    /**
+     * splits the lists and sorts them
+     */
     public ArrayList<Integer> sorting(ArrayList<Integer> l, int start, int finish){
         if(start < finish){
             int partitionIndex = partition(l, start, finish);
@@ -22,6 +29,9 @@ public class QSort{
         return l;
     }
 
+    /**
+     * finds where to split the lists
+     */
     private int partition(ArrayList<Integer> list, int begin, int end){
         int pivot = list.get(end);
 

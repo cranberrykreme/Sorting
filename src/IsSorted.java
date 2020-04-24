@@ -1,5 +1,8 @@
 import java.util.ArrayList;
 
+/**
+ * returns if the ArrayList is sorted or not
+ */
 public class IsSorted{
     public IsSorted(ArrayList<Integer> a){
         boolean sorted = false;

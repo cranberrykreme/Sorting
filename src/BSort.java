@@ -1,5 +1,9 @@
 import java.util.ArrayList;
-
+/**
+ * the slowest type of sorting
+ * Bubble sort
+ * uses two loops to sort in O(n^2) time
+ */
 public class BSort {
 
     ArrayList<Integer> list;

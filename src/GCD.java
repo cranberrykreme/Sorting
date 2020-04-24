@@ -8,6 +8,9 @@ public class GCD{
         b = small;
     }
 
+    /**
+     * finds the largest common denominator
+     */
     public int getGCD(){
         int temp= 0;
         while(b != 0){

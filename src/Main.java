@@ -19,6 +19,9 @@ public class Main {
         new Main();
     }
 
+    /**
+     * run all of the classes to sort and search
+     */
     public Main(){
         int a = findDenominator(5053240,543288);
         System.out.println("GCD is " + a);
@@ -35,18 +38,29 @@ public class Main {
         binary = new BSearch(searchMe);
     }
 
+    /**
+     * method to run the GCD class
+     */
     public int findDenominator(int a, int b){
         gcd = new GCD(a, b);
         int answer = gcd.getGCD();
         return answer;
     }
 
+    /**
+     * make new list with 3 Integers
+     * calls the List class
+     */
     public ArrayList<Integer> changeList(int a,int b, int c){
         list = new ListClass();
         list.add(a,b,c);
         return list.getList();
     }
 
+    /**
+     * initializes random list to be sorted
+     * @return random list of length 15
+     */
     public ArrayList<Integer> makeList(){
         for(int i = 0; i<15; i++){
             sortMe.add(rand.nextInt(100));

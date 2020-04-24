@@ -1,5 +1,9 @@
 import java.util.ArrayList;
 
+/**
+ * makes an object which can be used
+ * to create ArrayLists
+ */
 public class ListClass {
 
     ArrayList<Integer> list;

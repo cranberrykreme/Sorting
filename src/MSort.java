@@ -1,5 +1,9 @@
 import java.util.ArrayList;
-
+ /**
+  * sorts and ArrayList using Merge Sort
+  * sorts much faster than bubble sort
+  * sorts in O(nlogn) time
+  */
 public class MSort{
     ArrayList<Integer> list;
 
@@ -8,7 +12,9 @@ public class MSort{
         System.out.println("sorted list Msort: " + list);
     }
 
-
+    /**
+     * splits the list up to be sorted and re-merged
+     */
     public ArrayList<Integer> sort(ArrayList<Integer> s, int len){
         if(len < 2){
             return s;
@@ -34,6 +40,9 @@ public class MSort{
         return s;
     }
 
+    /**
+     * sorts and re-merges the list
+     */
     public ArrayList<Integer> merge(ArrayList<Integer> m, ArrayList<Integer> l, ArrayList<Integer> r, int left, int right){
         int i = 0, j = 0, k = 0;
 

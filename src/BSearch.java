@@ -1,5 +1,9 @@
 import java.util.ArrayList;
 
+/**
+ * uses binary search to find a number
+ * in a sorted ArrayList
+ */
 public class BSearch{
 
     public BSearch(ArrayList<Integer> a){
@@ -10,6 +14,10 @@ public class BSearch{
         System.out.println("searched list rSearch: " + recursive);
     }
 
+    /**
+     * 
+     * Uses iterative search
+     */
     public int iSearch(ArrayList<Integer> list, int key, int low, int high){
         int index = -1;
 
@@ -28,6 +36,9 @@ public class BSearch{
         return index;
     }
 
+    /**
+     * uses recursive search
+     */
     public int rSearch(ArrayList<Integer> list, int key, int low, int high){
         int mid = (high + low)/2;
 
