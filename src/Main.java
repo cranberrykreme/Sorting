@@ -1,7 +1,10 @@
 import java.util.ArrayList;
 import java.util.Random;
 
-
+/**
+ * This is a simple program for showing
+ * algorithms and sorting techniques
+ */
 public class Main {
 
     private static Random rand = new Random();
